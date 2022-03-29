@@ -1,4 +1,4 @@
-# BaselineProtocol
+# Baseline Protocol
 Baseline Protocol and its Reference Implementations
 
 
