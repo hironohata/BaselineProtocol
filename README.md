@@ -37,8 +37,8 @@ Baseline Protocol の採用はまだまだ進んではいないが、当仕様�
 
 
 <br>  
-# １．Baseline Protocol
-##1.1	目的と位置付け
+# 1. Baseline Protocol
+## 1.1 目的と位置付け
 
 “Baseline Protocol” の目的・位置づけとして次のように宣言している。
 
