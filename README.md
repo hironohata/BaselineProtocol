@@ -173,7 +173,8 @@ Baseledgerは企業活動を（当然で、自然でもあるが）Workflowで�
 協業する企業間でWorkgroupを構成。図ではWorkgroup 1: Supply Chain Network とWorkgroup 2:Invoice Financingが例示されている。企業組織Org1は Workgroup 1に属し、Org3は Workgroup 1とWorkgroup 2の双方に属している。
 
 <br> 
-![](./Figs/Fig2-1.baseledger-architecure.png)
+
+<img src=./Figs/Fig2-1.baseledger-architecure.png width="600">
 **図2-1　Baseledgerのアーキテクチャ**
 出典: https://docs.baseledger.net/baseledger-introduction/abstract
 <br> 
