@@ -43,6 +43,7 @@ Baseline Protocol の採用はまだまだ進んではいないが、当仕様�
 
 ”The Baseline Protocol is a framework that enables enterprises to synchronize complex, multiparty, business processes with privacy and without moving data from systems of record.
 Zero Knowledge circuits employ a common frame of reference that allows all parties in a networked business process to maintain their own systems-of-record in a verified state of consistency. Public blockchain is advised but not required. ”
+
 &nbsp; &nbsp; 出典： ”The Standard for Universal Verified State Synchronization & Multiparty Coordination Using Zero Knowledge”  (https://www.baseline-protocol.org/)
 
 Baseline Protocolはビジネスプロセスを同期（データ連携）するための**フレームワーク**。ビジネスを行うパートナーにも、プライバシー（企業秘密）を開示しない場合はZero Knowledge技術を利用
@@ -59,14 +60,14 @@ https://consensys.net/blog/press-release/ey-and-consensys-announce-formation-of-
 
 Baseline Protocol Specification V1.0 が2021年11月に発表されている。
 
-	•	documentation: https://docs.baseline-protocol.org/
-	•	github repo: https://github.com/eea-oasis/baseline-standard
+	• documentation: https://docs.baseline-protocol.org/
+	• github repo: https://github.com/eea-oasis/baseline-standard
 
 これは以下を含んでいる。
 
-	•	Core Specification (https://docs.baseline-protocol.org/baseline-protocol-standard/core-specification)
-	•	API Specification （https://docs.baseline-protocol.org/baseline-protocol-standard/api-specification）
-	•	CCSM Specification（https://docs.baseline-protocol.org/baseline-protocol-standard/ccsm-specification）
+	• Core Specification (https://docs.baseline-protocol.org/baseline-protocol-standard/core-specification)
+	• API Specification （https://docs.baseline-protocol.org/baseline-protocol-standard/api-specification）
+	• CCSM Specification（https://docs.baseline-protocol.org/baseline-protocol-standard/ccsm-specification）
 	CCSM: Consensus Controlled State Machine. P2PでDecentralized systemを可能にするネットワーク。
 
 これらのSpecificationで使用される語彙についてはGlossary （https://docs.baseline-protocol.org/baseline-basics/glossary）を参照。
@@ -86,10 +87,10 @@ CCSM Layer を定義している。
 Baseline Protocol Specification V1.0が発表される前から、Baseline Protocolが試行されている。
 
 ```
-•	CONA:  Baselining the North America Coca-Cola Bottling Supply Chain. 
-	Coke One North America (CONA), the IT platform for Coca-Cola’s North American bottling business
+• CONA:  Baselining the North America Coca-Cola Bottling Supply Chain. 
+  Coke One North America (CONA), the IT platform for Coca-Cola’s North American bottling business
 
-•	E&Y OpsChain Network Procurement solution
+• E&Y OpsChain Network Procurement solution
 ```
 	
 ### 1.3.1 Baseline Reference Implementation
