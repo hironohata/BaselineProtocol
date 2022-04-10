@@ -24,7 +24,7 @@
 ```
 
 <br>  
-#0. はじめに
+# 0. はじめに
 
 Enterprise Blockchainの一環としてEY（Ernst & Young）とConsenSys が2020年に開始したBaseline Protcol Initiativeは、サイロ状態にある各企業のERPを、ブロックチェーンを介した「疎結合」を通して、データ連携を図ることを目的とした。その後、Oasis FoundationとEnterprise Ethereum Alliance （EEA）の共同プロジェクトに所管が移り、2021年11月にBaseline Protocol Specification V1.0 が発表されている。
 
