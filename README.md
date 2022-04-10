@@ -295,11 +295,11 @@ https://www.youtube.com/watch?v=ywo-MBGZ4xc&t=1s
 
 この例では Aliceと Bobの間で、簡単な Workflowを実施する。
 
- • 実行環境はすでに設定されているとする。
- • Workflowはすでに登録されているものを利用。UIとして Excelシートを使用。
+	• 実行環境はすでに設定されているとする。
+	• Workflowはすでに登録されているものを利用。UIとして Excelシートを使用。
 	その裏には VBAで Baseledgerとの interactionが定義されている。（図2-4）
- • Aliceが見積もり依頼を発行し、Bobがその Proposalを返すケースなどを想定。
- • Alice と Bobが使用する Workgroup ID、アクセストークン（JWT）は取得済みとする。
+	• Aliceが見積もり依頼を発行し、Bobがその Proposalを返すケースなどを想定。
+	• Alice と Bobが使用する Workgroup ID、アクセストークン（JWT）は取得済みとする。
 
 <br> 
 <img src=./Figs/Fig2-4.ExcelSheet.png width="600">
@@ -311,13 +311,13 @@ https://www.youtube.com/watch?v=ywo-MBGZ4xc&t=1s
 
 社内で実施している Workflowのオペレーションと同様の手順で進めることができる。
 
- (1) Aliceは最初の Workstepを開始する（Add new ボタン）
- (2) Aliceは Proofとして（上記例では）氏名（Last Name, First Name）を入力し、Bobに送出する（Suggestボタン）。
- (3) Bob は最新の Workstepを取得し（Get newボタン）、内容を確認したのちに Approve、
-	 または Rejectを返す（Approve/Rejectボタン。図中にはない）。
- (4) Approvedが返って場合、Aliceは次の Workstepを実施。以下、同様に繰り返す。
-	 Rejectが返って場合、Aliceは入力を修正し、Bobに再送出する（従って Workstep の Versionが上がる）。
- (5) Workflowが完了すればExitする。
+	(1) Aliceは最初の Workstepを開始する（Add new ボタン）
+	(2) Aliceは Proofとして（上記例では）氏名（Last Name, First Name）を入力し、Bobに送出する（Suggestボタン）。
+	(3) Bob は最新の Workstepを取得し（Get newボタン）、内容を確認したのちに Approve、
+	    または Rejectを返す（Approve/Rejectボタン。図中にはない）。
+	(4) Approvedが返って場合、Aliceは次の Workstepを実施。以下、同様に繰り返す。
+	    Rejectが返って場合、Aliceは入力を修正し、Bobに再送出する（従って Workstep の Versionが上がる）。
+	(5) Workflowが完了すればExitする。
 	
 各Workstepでの statusは version管理もできる TrustMesh（Baseledgerの追加機能）に表示される。Aliceは自分用の TrustMesh Viz画面（図2-5、個人用ポータル）で Workflowを把握することができる。
 
