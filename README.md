@@ -134,6 +134,7 @@ Outreach Teamが設置されている。
 AMD、EY、ChainLink、Core Convergence、ConsenSys、Duke University、Envision Blockchain、MakerDAO、Microsoft、Neocova、Splunk、Unibright、Provide、W3BCLOUD。
 
 <br> 
+
 # 2. Baseledger
 
 Baseline protocol のユースケース：　
@@ -148,6 +149,7 @@ https://github.com/eea-oasis/baseline/tree/main/examples を参照。
 このうち、baseledger-excelのベースであるBaseledgerが現時点で一番整備されているBRI（Baseline Reference Implementation）である。
 
 <br> 
+
 ## 2.1 Baseledgerの位置付け
 
 BaseledgerはUnibright（ドイツFrankfurt近郊）がProvide（米国Atlanta）と開発しているBaseline Protocolの実装であり、アプリケーション開発のためのフレームワークである。
@@ -167,16 +169,20 @@ Baseledgerの内容、機能、Ethereumとの比較などについては上記�
 Baseledgerをどのように利用できるかを検討するために上記の Baseledgerの Documentation（https://docs.baseledger.net/）を参照しよう。
 
 <br> 
+
 ## 2.2 Baseledgerの構成と動作
+
 Baseledgerは企業活動を（当然で、自然でもあるが）Workflowで捉えている。図2-1の真ん中の２つの箱にBaseledgerの動作環境を見ることができる。
 
 協業する企業間でWorkgroupを構成。図ではWorkgroup 1: Supply Chain Network とWorkgroup 2:Invoice Financingが例示されている。企業組織Org1は Workgroup 1に属し、Org3は Workgroup 1とWorkgroup 2の双方に属している。
 
-<br> 
+<br>
 
-<img src=./Figs/Fig2-1.baseledger-architecure.png width="600">
+<img src=./Fig2-1.baseledger-architecure.png width="600">
+
 **図2-1　Baseledgerのアーキテクチャ**
 出典: https://docs.baseledger.net/baseledger-introduction/abstract
+
 <br> 
 
 企業組織間では、Workflowを開始するときの認証（Authentication）と契約内容などを Proof（証明書）として Message交換する。と同時にデータ連携（同期）のために Baseledgerとやりとりする（Baselining）。
@@ -202,13 +208,17 @@ Exitした後は、Baseledgerの外で（または協業して）、Final State�
 例えば、サプライチェーンで生産工程が完了した後に、１次、２次販売システムにつなげた場合などを想定することができる。
 
 <br> 
-![](./Figs/Fig2-2.Comm-Alice-Bob.png)
+
+<img src=./Figs/Fig2-2.Comm-Alice-Bob.png width="600">
+
 **図2-２　企業間Workflowの実行**
 出典: https://docs.baseledger.net/baseledger-concepts/example-use-case
 
 
 <br> 
+
 ## 2.3 いくつかのトピックス
+
 ブロックチェーンが、特に Public型のブロックチェーンが企業ユースに広まらない理由として、Performanceの低さ、利用費用が挙げられる。
 
 ### •	Performance
@@ -233,14 +243,18 @@ TBS
 •	Mainnet: 2022年Q１に Mainnet Candidateとして Plateauのリリースを予定している。
 
 <br> 
+
 ## 2.4 実施例 (Mainnet)
 
 <br> 
+
 ## 2.5 実施例 (Testnet)
 Baseledgerを使用した例を紹介する。デモの程度であるものが多いが、使い方の理解に役立つであろう。
 
 <br> 
+
 ### 2.5.1 Drop a proof via a local node
+
 https://docs.baseledger.net/howtos-1/how-to-drop-a-proof-on-baseledger-lakewood/drop-a-proof-via-preinstalled-nodes
 
 (1)	LakewoodのLocal nodeのセットアップと起動
@@ -263,12 +277,14 @@ https://docs.baseledger.net/howtos-1/how-to-drop-a-proof-on-baseledger-lakewood/
 この例では、手作業で Proofを POSTしているが、これを Workflowの処理プログラムで実行する。Proofの確認に、それを含む Transactionを Explorerで目視確認をしているが、Verifyプログラムで実行する。さらに ZKPを利用したスマートコントラクトを利用することもできる。
 
 <br> 
-![](./Figs/Fig2-3.LakewoodExplorer.png)
+<img src=./Figs/Fig2-3.LakewoodExplorer.png width="600">
 **図2-3　Lakewood Explorerを使用してTransactionの確認**
 
 
 <br> 
+
 ### 2.5.2 Baseledger-Excel
+
 https://github.com/eea-oasis/baseline/tree/main/examples/baseledger-excel
 https://www.youtube.com/watch?v=ywo-MBGZ4xc&t=1s
 
@@ -281,7 +297,7 @@ https://www.youtube.com/watch?v=ywo-MBGZ4xc&t=1s
 	•	Alice と Bobが使用する Workgroup ID、アクセストークン（JWT）は取得済みとする。
 
 <br> 
-![](./Figs/Fig2-4.ExcelSheet.png)
+<img src=./Figs/Fig2-4.ExcelSheet.png width="600">
 **図2-4　Baseledger-Excelのアプリ画面（Alice用）**
 Bobも同様のExcelシートを使用。
 出典: https://www.youtube.com/watch?v=ywo-MBGZ4xc&t=1s
@@ -300,8 +316,8 @@ Bobも同様のExcelシートを使用。
 各Workstepでの statusは version管理もできる TrustMesh（Baseledgerの追加機能）に表示される。Aliceは自分用の TrustMesh Viz画面（図2-5、個人用ポータル）で Workflowを把握することができる。
 
 <br> 
-![](./Figs/Fig2-5.TrustMesg.png)
-**図2-5　TrustMesh Viz画面（Alice用）**
+<img src=.//Figs/Fig2-5.TrustMesg.png width="600">
+図2-5　TrustMesh Viz画面（Alice用）
 出典: https://www.youtube.com/watch?v=ywo-MBGZ4xc&t=1s
 <br> 
 
@@ -316,7 +332,7 @@ Unibright Framework（および Provide）では Blockchain Integrationとして
 
 <br> 
 <img src=./Figs/Fig2-6全体像.png width="600">
-**図2-6　 Baseledger-Excelのシステム構成**
+図2-6　 Baseledger-Excelのシステム構成
 <br> 
 
 
@@ -329,12 +345,15 @@ Baseline Protocolではconnectorの例として、
 をあげているので、Baseledgerでも利用可能であろう。
 
 <br> 
+
 ## 2.6 組織・運営
+
 BaseledgerもBaseledger Governance Councilを2021年12月に立ち上げ、開発・運用体制を整備している。詳細　TBS。
 
 
 
 <br> 
+
 # 3. 利用へのアプローチ
 
 （省略）
