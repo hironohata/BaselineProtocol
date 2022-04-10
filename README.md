@@ -137,13 +137,13 @@ AMD、EY、ChainLink、Core Convergence、ConsenSys、Duke University、Envision
 
 # 2. Baseledger
 
-Baseline protocol のユースケース：　
-•	baseledger-excel
-•	battleship
-•	bpi-monolith-test-suite
-•	bri-1
-•	bri-2
-•	financialcircuit:  ZKPを利用
+Baseline protocol のユースケース： <br> 
+• baseledger-excel
+• battleship
+• bpi-monolith-test-suite
+• bri-1
+• bri-2
+• financialcircuit:  ZKPを利用
 https://github.com/eea-oasis/baseline/tree/main/examples を参照。
 
 このうち、baseledger-excelのベースであるBaseledgerが現時点で一番整備されているBRI（Baseline Reference Implementation）である。
@@ -261,22 +261,22 @@ https://docs.baseledger.net/howtos-1/how-to-drop-a-proof-on-baseledger-lakewood/
 
 (1)	LakewoodのLocal nodeのセットアップと起動
 
-	•	Lakewood nodeはhttps://github.com/Baseledger/baseledger-lakewoodからダウンロードできる。
-	•	docker run で Lakewoodの containerを生成し、起動する。
-	•	Lakewood networkと接続するために nodeを登録後、docker exec で Local nodeを起動すると同期が開始される。
+	• Lakewood nodeはhttps://github.com/Baseledger/baseledger-lakewoodからダウンロードできる。
+	• docker run で Lakewoodの containerを生成し、起動する。
+	• Lakewood networkと接続するために nodeを登録後、docker exec で Local nodeを起動すると同期が開始される。
 	完全に同期するまでに1日ほどかかる。
 
 <br> 
 
 (2)	サンプル操作の実行
 
-	•	Local nodeから Proofを書き込んで、その存在を Lakewood explorer で確認する。（これだけの簡単なサンプル操作である）
-	•	curlを使用してProof（"A proof here!"）をPOSTする。
+	• Local nodeから Proofを書き込んで、その存在を Lakewood explorer で確認する。（これだけの簡単なサンプル操作である）
+	• curlを使用してProof（"A proof here!"）をPOSTする。
 	$ curl --location --request POST 'http://localhost:1317/signAndBroadcast' --header 'Content-Type: text/plain' 
 	--data-raw '{"payload": "A proof here!",　"op_code": 9}'
-	•	成功裏に実行されて、TrxIDが返ってくる。
+	• 成功裏に実行されて、TrxIDが返ってくる。
 	例: FD86CCB504C4CE55DF8D0F6BBCDE72DDC298FB90BF60470DC0EA297722708716
-	•	Lakewood Explorerを使用して、その Transactionを確認する。（図2-3）
+	• Lakewood Explorerを使用して、その Transactionを確認する。（図2-3）
 	
 この例では、手作業で Proofを POSTしているが、これを Workflowの処理プログラムで実行する。Proofの確認に、それを含む Transactionを Explorerで目視確認をしているが、Verifyプログラムで実行する。さらに ZKPを利用したスマートコントラクトを利用することもできる。
 
@@ -295,11 +295,11 @@ https://www.youtube.com/watch?v=ywo-MBGZ4xc&t=1s
 
 この例では Aliceと Bobの間で、簡単な Workflowを実施する。
 
-	•	実行環境はすでに設定されているとする。
-	•	Workflowはすでに登録されているものを利用。UIとして Excelシートを使用。
-		その裏には VBAで Baseledgerとの interactionが定義されている。（図2-4）
-	•	Aliceが見積もり依頼を発行し、Bobがその Proposalを返すケースなどを想定。
-	•	Alice と Bobが使用する Workgroup ID、アクセストークン（JWT）は取得済みとする。
+ • 実行環境はすでに設定されているとする。
+ • Workflowはすでに登録されているものを利用。UIとして Excelシートを使用。
+	その裏には VBAで Baseledgerとの interactionが定義されている。（図2-4）
+ • Aliceが見積もり依頼を発行し、Bobがその Proposalを返すケースなどを想定。
+ • Alice と Bobが使用する Workgroup ID、アクセストークン（JWT）は取得済みとする。
 
 <br> 
 <img src=./Figs/Fig2-4.ExcelSheet.png width="600">
@@ -311,13 +311,13 @@ https://www.youtube.com/watch?v=ywo-MBGZ4xc&t=1s
 
 社内で実施している Workflowのオペレーションと同様の手順で進めることができる。
 
-	(1)	Aliceは最初の Workstepを開始する（Add new ボタン）
-	(2)	Aliceは Proofとして（上記例では）氏名（Last Name, First Name）を入力し、Bobに送出する（Suggestボタン）。
-	(3)	Bob は最新の Workstepを取得し（Get newボタン）、内容を確認したのちに Approve、
-		または Rejectを返す（Approve/Rejectボタン。図中にはない）。
-	(4)	Approvedが返って場合、Aliceは次の Workstepを実施。以下、同様に繰り返す。
-		Rejectが返って場合、Aliceは入力を修正し、Bobに再送出する（従って Workstep の Versionが上がる）。
-	(5)	Workflowが完了すればExitする。
+ (1) Aliceは最初の Workstepを開始する（Add new ボタン）
+ (2) Aliceは Proofとして（上記例では）氏名（Last Name, First Name）を入力し、Bobに送出する（Suggestボタン）。
+ (3) Bob は最新の Workstepを取得し（Get newボタン）、内容を確認したのちに Approve、
+	 または Rejectを返す（Approve/Rejectボタン。図中にはない）。
+ (4) Approvedが返って場合、Aliceは次の Workstepを実施。以下、同様に繰り返す。
+	 Rejectが返って場合、Aliceは入力を修正し、Bobに再送出する（従って Workstep の Versionが上がる）。
+ (5) Workflowが完了すればExitする。
 	
 各Workstepでの statusは version管理もできる TrustMesh（Baseledgerの追加機能）に表示される。Aliceは自分用の TrustMesh Viz画面（図2-5、個人用ポータル）で Workflowを把握することができる。
 
@@ -339,8 +339,7 @@ Unibright Framework（および Provide）では Blockchain Integrationとして
 <img src=./Figs/Fig2-6全体像.png width="600">
 図2-6　 Baseledger-Excelのシステム構成
 
-<br> 
-
+<br>  
 
 Baseline Protocolではconnectorの例として、
 
