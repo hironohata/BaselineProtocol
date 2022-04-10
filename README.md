@@ -139,12 +139,13 @@ AMD、EY、ChainLink、Core Convergence、ConsenSys、Duke University、Envision
 # 2. Baseledger
 
 Baseline protocol のユースケース： <br> 
-• baseledger-excel
-• battleship
-• bpi-monolith-test-suite
-• bri-1
-• bri-2
-• financialcircuit:  ZKPを利用
+
+	• baseledger-excel
+	• battleship
+	• bpi-monolith-test-suite
+	• bri-1
+	• bri-2
+	• financialcircuit:  ZKPを利用
 https://github.com/eea-oasis/baseline/tree/main/examples を参照。
 
 このうち、baseledger-excelのベースであるBaseledgerが現時点で一番整備されているBRI（Baseline Reference Implementation）である。
