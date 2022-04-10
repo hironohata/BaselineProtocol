@@ -178,9 +178,10 @@ Baseledgerは企業活動を（当然で、自然でもあるが）Workflowで�
 
 <br>
 
-<img src=./Fig2-1.baseledger-architecure.png width="600">
+<img src=./Figs/Fig2-1.baseledger-architecure.png width="600">
 
 **図2-1　Baseledgerのアーキテクチャ**
+
 出典: https://docs.baseledger.net/baseledger-introduction/abstract
 
 <br> 
@@ -212,6 +213,7 @@ Exitした後は、Baseledgerの外で（または協業して）、Final State�
 <img src=./Figs/Fig2-2.Comm-Alice-Bob.png width="600">
 
 **図2-２　企業間Workflowの実行**
+
 出典: https://docs.baseledger.net/baseledger-concepts/example-use-case
 
 
@@ -224,19 +226,19 @@ Exitした後は、Baseledgerの外で（または協業して）、Final State�
 ### •	Performance
 Performance の向上を目標として ETH2では Rollupなどの Layer 2技術を使用する。Baseline Protocol（Baseledger）は Layer1 とは別途に Consensusメカニズムを動作する CCSMで Layer2として動作する。Consensusも PoAである。
 
-###•	Transaction Cost:  
+### •	Transaction Cost:  
 Ethereumでは ETHをガス費用に当てているために、ETH価格の高騰により、実行コストは平均 ＄4/trxと言われている。また、マーケットでの価格変動に左右されるため、予算を決めて利用することは難しい面がある。これに対して、Baseledgerは Utility Tokenの UBTを使用する。記録管理ブロックチェーン Factomで Dual Tokenのうち、Creditsを動作費用に当てているのと同様である。なお、Factomは機能向上と組織変更のために Re-brandingし、Accumulateとして再出発する。　
 
-###•	Data Privacy – ZKPの利用
+### •	Data Privacy – ZKPの利用
 　　　TBS
 
-###•	Identity Management:　　　
+### •	Identity Management:　　　
 TBS
 
-###•	Multi-chain:　　　
+### •	Multi-chain:　　　
 TBS
 
-###•	Baseledgerの開発状況：　
+### •	Baseledgerの開発状況：　
 
 •	Testnet: Unibrightは2021年9月に Testnet Lakewoodをリリースしている。その実装は COSMOS SDKを利用。
 
@@ -264,6 +266,8 @@ https://docs.baseledger.net/howtos-1/how-to-drop-a-proof-on-baseledger-lakewood/
 	•	Lakewood networkと接続するために nodeを登録後、docker exec で Local nodeを起動すると同期が開始される。
 	完全に同期するまでに1日ほどかかる。
 
+<br> 
+
 (2)	サンプル操作の実行
 
 	•	Local nodeから Proofを書き込んで、その存在を Lakewood explorer で確認する。（これだけの簡単なサンプル操作である）
@@ -278,7 +282,8 @@ https://docs.baseledger.net/howtos-1/how-to-drop-a-proof-on-baseledger-lakewood/
 
 <br> 
 <img src=./Figs/Fig2-3.LakewoodExplorer.png width="600">
-**図2-3　Lakewood Explorerを使用してTransactionの確認**
+
+図2-3　Lakewood Explorerを使用してTransactionの確認
 
 
 <br> 
@@ -298,9 +303,10 @@ https://www.youtube.com/watch?v=ywo-MBGZ4xc&t=1s
 
 <br> 
 <img src=./Figs/Fig2-4.ExcelSheet.png width="600">
-**図2-4　Baseledger-Excelのアプリ画面（Alice用）**
-Bobも同様のExcelシートを使用。
+図2-4　Baseledger-Excelのアプリ画面（Alice用）  - Bobも同様のExcelシートを使用。
+
 出典: https://www.youtube.com/watch?v=ywo-MBGZ4xc&t=1s
+
 <br> 
 
 社内で実施している Workflowのオペレーションと同様の手順で進めることができる。
@@ -318,11 +324,10 @@ Bobも同様のExcelシートを使用。
 <br> 
 <img src=.//Figs/Fig2-5.TrustMesg.png width="600">
 図2-5　TrustMesh Viz画面（Alice用）
+
 出典: https://www.youtube.com/watch?v=ywo-MBGZ4xc&t=1s
+
 <br> 
-
-
-
 
 図2-6にBaseledger-Excelのシステム構成を示す。
 
@@ -333,22 +338,25 @@ Unibright Framework（および Provide）では Blockchain Integrationとして
 <br> 
 <img src=./Figs/Fig2-6全体像.png width="600">
 図2-6　 Baseledger-Excelのシステム構成
+
 <br> 
 
 
-
-
-
 Baseline Protocolではconnectorの例として、
+
 •	SAPとMicrosoft Dynamics 365
+
 •	Google SheetsとMicrosoft Dynamics 365
+
 をあげているので、Baseledgerでも利用可能であろう。
 
 <br> 
 
 ## 2.6 組織・運営
 
-BaseledgerもBaseledger Governance Councilを2021年12月に立ち上げ、開発・運用体制を整備している。詳細　TBS。
+BaseledgerもBaseledger Governance Councilを2021年12月に立ち上げ、開発・運用体制を整備している。
+
+詳細　TBS。
 
 
 
