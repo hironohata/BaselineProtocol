@@ -37,7 +37,7 @@ Baseline Protocol の採用はまだまだ進んではいないが、当仕様�
 
 
 <br>  
-# １．	Baseline Protocol
+# １．Baseline Protocol
 ##1.1	目的と位置付け
 
 “Baseline Protocol” の目的・位置づけとして次のように宣言している。
@@ -55,7 +55,7 @@ EY and ConsenSys Announce Formation of Baseline Protocol Initiative に記事あ
 https://consensys.net/blog/press-release/ey-and-consensys-announce-formation-of-baseline-protocol-initiative-to-make-ethereum-mainnet-safe-and-effective-for-enterprises/?utm_campaign=ConsenSys%20Newsletter&utm_source=hs_email&utm_medium=email&utm_content=
 
 <br> 
-## 1.2	Baseline Protocol Specification V1.0
+## 1.2 Baseline Protocol Specification V1.0
 
 Baseline Protocol Specification V1.0 が2021年11月に発表されている。
 
@@ -80,7 +80,7 @@ CCSM Layer を定義している。
 詳細はhttps://docs.baseline-protocol.org/baseline-basics/architectureを参照。
 
 <br> 
-## 1.3	実装例（利用例）
+## 1.3 実装例（利用例）
 
 Baseline Protocol Specification V1.0が発表される前から、Baseline Protocolが試行されている。
 
@@ -117,7 +117,7 @@ Baseline Integrates Microsoft and Google Spreadsheets Using Ethereum Mainnet
 ###	•	WorkflowシステムとのConnector （未提供。Baseledgerを参照）
 
 <br> 	
-## 1.4	コミュニティ
+## 1.4 コミュニティ
 
 オープンソースのBaseline Protocolはコミュニティで運営されている。
 コミュニティのリーダーとして、
@@ -132,7 +132,7 @@ Outreach Teamが設置されている。
 AMD、EY、ChainLink、Core Convergence、ConsenSys、Duke University、Envision Blockchain、MakerDAO、Microsoft、Neocova、Splunk、Unibright、Provide、W3BCLOUD。
 
 <br> 
-# ２．	Baseledger
+# ２. Baseledger
 
 Baseline protocol のユースケース：　
 •	baseledger-excel
