@@ -53,7 +53,8 @@ Baseline Protocolはビジネスプロセスを同期（データ連携）する
 EY and ConsenSys Announce Formation of Baseline Protocol Initiative に記事あり。
 https://consensys.net/blog/press-release/ey-and-consensys-announce-formation-of-baseline-protocol-initiative-to-make-ethereum-mainnet-safe-and-effective-for-enterprises/?utm_campaign=ConsenSys%20Newsletter&utm_source=hs_email&utm_medium=email&utm_content=
 
-<br> 
+<br>  
+
 ## 1.2 Baseline Protocol Specification V1.0
 
 Baseline Protocol Specification V1.0 が2021年11月に発表されている。
@@ -79,6 +80,7 @@ CCSM Layer を定義している。
 詳細はhttps://docs.baseline-protocol.org/baseline-basics/architectureを参照。
 
 <br> 
+
 ## 1.3 実装例（利用例）
 
 Baseline Protocol Specification V1.0が発表される前から、Baseline Protocolが試行されている。
@@ -116,6 +118,7 @@ Baseline Integrates Microsoft and Google Spreadsheets Using Ethereum Mainnet
 ###	•	WorkflowシステムとのConnector （未提供。Baseledgerを参照）
 
 <br> 	
+
 ## 1.4 コミュニティ
 
 オープンソースのBaseline Protocolはコミュニティで運営されている。
